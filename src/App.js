@@ -17,10 +17,12 @@ class App extends Component {
     this.setState({names: newNames})
   }
   componentDidUpdate() {
+    const savedNameString = JSON.stringify(this.state.names);
+    localStorage.setItem("savedNamed", savedNameString);
 
   }
   componentDidMount(){
-    
+
   }
   render() {
     return (
