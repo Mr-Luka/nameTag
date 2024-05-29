@@ -22,7 +22,11 @@ class App extends Component {
 
   }
   componentDidMount(){
-
+    const savedNamesString = localStorage.getItem("savedNames");
+    if(savedNamesString) {
+      const savedNames = JSON.parse(savedNamesString);
+      this.setState({names: savedNames});
+    }
   }
   render() {
     return (
