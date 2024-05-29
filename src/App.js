@@ -4,7 +4,7 @@ import UserInput from "./UserInput.js";
 
 class App extends Component {
   state = {
-    names: ["Erin", "Ann", "Nichole", "Sharon", "Maryn"]
+    names: []
   };
   removeName = (clickedIndex) => {
     
