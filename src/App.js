@@ -16,6 +16,12 @@ class App extends Component {
     const newNames = [...this.state.names, name];
     this.setState({names: newNames})
   }
+  componentDidUpdate() {
+
+  }
+  componentDidMount(){
+    
+  }
   render() {
     return (
       <div className="App">
